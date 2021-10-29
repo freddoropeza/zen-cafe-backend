@@ -3,7 +3,7 @@ const express = require('express');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const menuController = require('./controllers/menu')
+const productsController = require('./controllers/products')
 
 // Initialize Express
 const app = express();
@@ -28,7 +28,7 @@ app.use(logger('dev'));
 app.use(express.json());
 
 // Mount controllers/routes
-app.use('/', menuController);
+app.use('/', productsController);
 
 
 // App Listen
