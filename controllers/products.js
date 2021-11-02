@@ -19,10 +19,10 @@ router.get('/seed', async (req, res) => {
 
         // create some skill data
         const products = await Product.create([
-            {title: 'Black Milk Tea', img: 'https://i.ibb.co/YR4j7yb/photo-1558857563-b371033873b8-ixlib-rb-1-2.jpg', description: 'best tea', type: 'drink'},
-            {title: 'Oolong Milk Tea', img: 'https://i.ibb.co/jwhCkVF/image.png', description: 'best tea', type: 'drink'},
-            {title: 'Green Tea Snow', img: 'https://i.ibb.co/n0src76/green-tea-matcha-ice-cream-600w-406349992.jpg', description: 'best snow', type: 'snow'},
-            {title: 'Black Sesame Snow', img: 'https://i.ibb.co/qDfjHHT/black-sesame-charcoal-ice-cream-600w-1042082014.jpg', description: 'best snow', type: 'snow'},
+            {title: 'Black Milk Tea', img: 'https://i.ibb.co/YR4j7yb/photo-1558857563-b371033873b8-ixlib-rb-1-2.jpg', description: 'best tea', price: '5', type: 'drink'},
+            {title: 'Oolong Milk Tea', img: 'https://i.ibb.co/jwhCkVF/image.png', description: 'best tea', price: '5', type: 'drink'},
+            {title: 'Green Tea Snow', img: 'https://i.ibb.co/n0src76/green-tea-matcha-ice-cream-600w-406349992.jpg', description: 'best snow', price: '6', type: 'snow'},
+            {title: 'Black Sesame Snow', img: 'https://i.ibb.co/qDfjHHT/black-sesame-charcoal-ice-cream-600w-1042082014.jpg', description: 'best snow', price: '6', type: 'snow'},
         ]);
         res.json(products);
     } catch (error) {
