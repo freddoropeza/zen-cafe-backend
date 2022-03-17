@@ -30,6 +30,5 @@ app.use(express.json());
 // Mount controllers/routes
 app.use('/', productsController);
 
-
 // App Listen
 app.listen(PORT, () => console.log(`Express is listening on port:${PORT}`));
